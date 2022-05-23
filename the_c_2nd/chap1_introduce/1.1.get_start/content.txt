@@ -1,0 +1,18 @@
+- 1 chương trình C bao gồm:
+    + functions: bao gồm các statements
+    + variables: lưu giá trị trong quá trình tính toán
+
+- main(): mọi chương trình C bắt đầu từ main() => bắt buộc phải có main()
+
+- main() sẽ call các functions khác để  thực hiện 1 job, những function này có ở:
+    + tự viết (user-define)
+    + library (build-in functions)
+
+- chỉ thị tiền xử lý: #include <stdio.h>
+    + tell compiler include information từ standard input/output library
+
+- phương pháp để  giao tiếp data giữa các hàm => cung cấp cho hàm list of values
+    + được gọi là arguments
+    + main(): không có arguments
+
+- chuỗi các ký tự đặt giữa "" được gọi là "character string" hoặc "string constant"
