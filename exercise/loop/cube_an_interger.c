@@ -1,20 +1,18 @@
-/*Display the cube of the number up to an interger */
+/* Display the cube of the number up to an interger */
 
-#include "stdio.h"
+#include <stdio.h>
 
-int main ()
+int main(void)
 {
-    int n;
-    printf("input number of terms: ");
-    scanf("%d", &n);
-    int i;
-    int value;
+    int n, i;
 
+    printf("input number: ");
+    scanf("%d", &n);
+
+    printf("output: ");
     for (i = 1; i <= n; i++)
     {
-        printf("number is: %d and cube of the %d is: ", i, i);
-        value = i * i * i;
-        printf("%d ", value);
+        printf("%d^%d = %d\n", i, i, i*i*i);
     }
 
     return 0;

@@ -1,27 +1,23 @@
 /* Display the n terms of odd natural numbers and their sum */
 
-#include "stdio.h"
+#include <stdio.h>
 
-int main ()
+int main(void)
 {
-    int n;
-    printf("input numbers of terms: ");
-    scanf("%d", &n);
-    int i;
+    int n, i;
     int sum = 0;
-    int count = 0;
+    int count ;
 
-    printf("the odd numbers are: ");
+    printf("input numbers: ");
+    scanf("%d", &n);
+    printf("the odd numbers: ");
 
-    for (i = 1; count < n; i++)
+    for (count = 1; count < n; count+=2)
     {
-        if(i % 2 != 0)
-        {
-            printf("%d ", i);
-            count++;
-            sum += i;
-        }
+        printf("%d ", count);
+        sum += count;
     }
-    printf("\nthe sum of odd natural upto %d terms: %d", n, sum);
+    printf("\nsum of odd upto %d: %d", n, sum);
+
     return 0;
 }

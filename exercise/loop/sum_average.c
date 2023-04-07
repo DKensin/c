@@ -1,27 +1,26 @@
-/* Display sum and average of any number*/
+/* Print each numbers get from user and display sum and average of each number */
 
-#include "stdio.h"
+#include <stdio.h>
 
-int main ()
+int main(void)
 {
-    int n;
-    scanf("%d", &n);
-    printf("input the %d numbers: \n", n);
+    int n, i;
     int sum = 0;
     float aver;
-    int i;
-    int value;
+    int number;
 
-    for (i = 1; i <= 10; i++)
+    printf("input numbers: ");
+    scanf("%d", &n);
+
+    for (i = 1; i <= n; i++)
     {
         printf("number - %d: ", i);
-        scanf("%d", &value);
-        sum += value;
+        scanf("%d", &number);
+        sum += number;
         aver = sum/n;
     }
-    
-    printf("the sum of %d number is: %d\n", n, sum);
-    printf("the average is: %f\n", aver);
+    printf("the sum is: %d\n", sum);
+    printf("the average is: %.f\n", aver);
 
     return 0;
 }
