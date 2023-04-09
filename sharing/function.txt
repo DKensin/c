@@ -1,0 +1,60 @@
+type:
+    library function
+    user-defined functions
+
+syntax:
+return_type function_name(parameters)
+{
+    // body
+}
+
+life-time C program:
+    + write source code
+    + build (create exe file)
+    + run (./program.exe)
+
+function concepts:
+    + return type
+    + parameters
+    + function call
+    + arguments
+    + function prototype
+
+How the C Function Works: https://www.geeksforgeeks.org/c-functions/
+    + declare
+    + function call
+    + execute function
+    + return value (or void)
+    + exist
+
+// exercise sesstion 1
+1. sum, multiple, sub, divide
+2. square, cube
+3. chu vi, dien tich cua hinh tron
+
+================================ exercise round 2 ====================================================
+2k:
+	1. Write a C program to find maximum and minimum between two numbers using functions get from user
+		eg: Enter 2 number: 2 4 -> print:
+		minimum: 2
+		maximum: 4
+	2. Write a C program to check whether a number is even or odd using functions.
+	3. 
+
+
+5k:
+	1. Write a C program to check a number is prime or not?
+	2. Write a C program to find all prime numbers between given interval using functions.
+		eg: enter interval: 2 10
+		print: all prime number from 2 to 10: 2 3 5 7
+	3. Write a C program to find sum of all even or odd numbers in given range using recursion.
+
+10k:
+	1. Write a program in C to swap two numbers using a function. examples
+		Test Data :
+			Input 1st number : 2
+			Input 2nd number : 4
+		
+		Expected Output :
+			Before swapping: n1 = 2, n2 = 4                                                  
+			After swapping: n1 = 4, n2 = 2 

@@ -1,0 +1,53 @@
+==============================================================
+0. Introduce
+gcc: compiler
+
+preprocessor - preprocessor directive (before compilation)
+
+preprocessor: 4 types
+    1. Macro
+    2. File inclusion
+    3. Conditional compilation
+    4. Other directives
+
+==============================================================
+1. Macro: copy paste
+    + buil-in macro: __TIME__
+    + define:                   #define NUMBER  3
+    + function-like macro       #define sum(a, b) ((a) + (b))
+        add () for each parameter
+    + different between function and function-like macro
+
+2. File inclusion
+    #include <stdio.h>
+    copy content of stdio.h file into current source file:
+
+3: Conditional compilation
+    form 1:
+        #ifdef      = #if defined() (can use ||, &&...)
+        or
+        #ifndef
+        #endif
+
+    form 2
+        #if
+        #elif
+        #endif
+
+    form 3
+        #ifdef
+        #elif       = #elif defined()
+        #else
+        #endif
+
+4. Other directives
+    #undef
+
+==============================================================
+multiple files:
+    header file:
+        - 2 types: build-in, user-defined
+        - include file: <> or ""
+    gcc main.c calculation.c -o program
+    guard define
+        #ifndef __NAME_H_
