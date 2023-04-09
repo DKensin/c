@@ -5,9 +5,9 @@
 int main(void)
 {
     int n, i;
-    int sum = 0;
+    float sum = 0;
     float aver;
-    int number;
+    float number;
 
     printf("input numbers: ");
     scanf("%d", &n);
@@ -15,12 +15,12 @@ int main(void)
     for (i = 1; i <= n; i++)
     {
         printf("number - %d: ", i);
-        scanf("%d", &number);
+        scanf("%f", &number);
         sum += number;
-        aver = sum/n;
     }
-    printf("the sum is: %d\n", sum);
-    printf("the average is: %.f\n", aver);
+    printf("the sum is: %.f\n", sum);
+    aver = sum/n;
+    printf("the average is: %.1f\n", aver);
 
     return 0;
 }

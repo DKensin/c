@@ -9,10 +9,10 @@ int main(void)
     printf("input number: ");
     scanf("%d", &n);
 
-    printf("output: ");
+    printf("output: \n");
     for (i = 1; i <= n; i++)
     {
-        printf("%d^%d = %d\n", i, i, i*i*i);
+        printf("%d^3 = %d\n", i, i*i*i);
     }
 
     return 0;
