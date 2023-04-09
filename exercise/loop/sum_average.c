@@ -17,10 +17,10 @@ int main(void)
         printf("number - %d: ", i);
         scanf("%d", &number);
         sum += number;
-        aver = sum/n;
     }
     printf("the sum is: %d\n", sum);
-    printf("the average is: %.f\n", aver);
+    aver = (float)sum/n;
+    printf("the average is: %.1f\n", aver);
 
     return 0;
 }
